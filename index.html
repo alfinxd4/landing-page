@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A'Travel & Tour</title>
     <script src="https://kit.fontawesome.com/c8105c8ce4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/styles.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
             <div class="nav-item">
                 <!-- logo nav -->
                 <a href="">
-                    <img src="logo.png" alt="logo" width="50px">
+                    <img src="img/logo.png" alt="logo" width="50px">
                 </a>
                 <!-- expand menu -->
                 <button class="hamburger">
@@ -31,8 +31,8 @@
                 <li><a href="">Beranda</a></li>
                 <!-- submenu links -->
                 <li class="submenu-links">
-                    <a>Destinasi</a>
-                    <i class="fa fa-caret-down" style="color:#fff"></i>
+                    <a href="#destination" onclick="show_hide()">Destinasi</a>
+                    <i class="fa fa-caret-down"></i>
                     <!-- dropdown menu -->
                     <ul class="dropdown">
                         <li><a href="">Domestik</a></li>
@@ -41,18 +41,13 @@
                 </li>
                 <!-- submenu links -->
                 <li class="submenu-links">
-                    <a>Trip</a>
-                    <i class="fa fa-caret-down" style="color:#fff"></i>
-                    <!-- dropdown menu -->
-                    <ul class="dropdown">
-                        <li><a href="">Internasional</a></li>
-                    </ul>
+                    <a href="#trip">Trip</a>
                 </li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Blog</a></li>
-                <li><button>
-                        Konsultasikan
-                    </button></li>
+                <li><a href="#contact">Contact</a></li>
+                <a href="#"> <button class="btn" href="#contact">
+                </a>
+                Konsultasikan
+                </button>
             </ul>
         </nav>
         <!-- end nav -->
@@ -60,77 +55,103 @@
     <!-- end header -->
 
     <!-- start main -->
-    <main>
+    <main id="main">
         <!-- jumbotron -->
-        <div>
-            <img src="jumbotron.jpg" alt="" class="jumbotron">
+        <div id="jumbotron">
+            <img src="img/jumbotron.jpg" alt="beach" class="jumbotron">
         </div>
-        <!-- KEUNTUNGAN -->
-        <article>
-            <section>
-                <!-- title section -->
-                <h2 class="title">KEUNTUNGAN A'TOUR</h2>
-                <hr>
-                <div class="advantage-box">
-                    <div class="advantage">
-                        <i class="fa fa-hand-holding-dollar"></i>
-                        <h2>Jaminan Harga Terbaik</h2>
-                        <span>Tak perlu khawatir masalah harga, kami selalu berikan jaminan untuk harga terbaik untuk
-                            liburan anda.
-                        </span>
+
+        <div id="content">
+            <article id="advantage">
+                <section>
+                    <!-- title section -->
+                    <h2 class="title">KEUNTUNGAN A'TOUR</h2>
+                    <hr>
+                    <div class="advantage-box">
+                        <div class="advantage">
+                            <i class="fa fa-hand-holding-dollar"></i>
+                            <h2>Harga Perjalanan Terjangkau</h2>
+                            <span>Tak perlu khawatir masalah harga, Anda bisa menyesuaikan budget anda dengan tujuan
+                                wisata yang diinginkan.
+                            </span>
+                        </div>
+                        <div class="advantage">
+                            <i class="fa fa-comments"></i>
+                            <h2>Layanan Konsultasi</h2>
+                            <span>Kami menyediakan layanan untuk mengkonsultasikan destinasi liburan anda.</span>
+                        </div>
+                        <div class="advantage">
+                            <i class="fa fa-umbrella-beach"></i>
+                            <h2>Pilihan Destinasi Variatif</h2>
+                            <span>Kami menyediakan banyak pilihan destinasi yang cocok untuk anda, baik dalam Negeri
+                                maupun Internasional.</span>
+                        </div>
                     </div>
-                    <div class="advantage">
-                        <i class="fa fa-comments"></i>
-                        <h2>Layanan Pelanggan Professional</h2>
-                        <span>Team kami tergabung dari Tour Expert dengan segudang pengalaman. Konsultasikan langsung
-                            liburan anda!</span>
+                </section>
+            </article>
+            <article id="destination">
+                <section>
+                    <!-- title section -->
+                    <h2 class="title">DESTINASI WISATA POPULER</h2>
+                    <hr>
+                    <div class="destination-box d1">
+                        <div class="destination">
+                            <img src="img/monas.jpg" alt="monas">
+                            <span>Jakarta</span>
+                        </div>
+                        <div class="destination">
+                            <img src="img/bali.jpg" alt="bali">
+                            <span>Bali</span>
+                        </div>
+                        <div class="destination">
+                            <img src="img/banda-neira.jpg" alt="banda-neira">
+                            <span>Banda Neira</span>
+                        </div>
                     </div>
-                    <div class="advantage">
-                        <i class="fa fa-umbrella-beach"></i>
-                        <h2>Aktivitas & Rekreasi Pilihan</h2>
-                        <span>Kepuasan Anda merupakan prioritas bagi kami. Seluruh aktivitas, tur & rekreasi memiliki
-                            kualitas terbaik dunia.</span>
+                    <div class="destination-box d2">
+                        <div class="destination">
+                            <img src="img/toba-lake.jpg" alt="toba-lake">
+                            <span>Danau Toba</span>
+                        </div>
+                        <div class="destination">
+                            <img src="img/raja-ampat.jpg" alt="raja-ampat">
+                            <span>Raja Ampat</span>
+                        </div>
+                        <div class="destination">
+                            <img src="img/borobudur.jpg" alt="borobudur">
+                            <span>Borobudur</span>
+                        </div>
                     </div>
+                </section>
+            </article>
+        </div>
+        <!-- start aside -->
+        <aside id="contact">
+            <section class="cta">
+                <h2>Pesan Perjalanan</h2>
+                <button class="btn">Hubungi Kami</button>
+            </section>
+            <section class="cta">
+                <div class="box-profile">
+                    <img src="img/profile.jpg" alt="myPhoto">
+                    <span class="profile" id="name">Alfiansyah Cahyo W</span>
+                    <span class="profile" id="status"><i>Jr. Web Developer</i></span>
+                    <span class="profile" id="email"><i>alfinxd4@gmail.com</i></span>
+                    <span class="profile" id="email"><i>(+62)858-1972-7856</i></span>
+                    <span class="profile" id="email"><i>Tajur Halang, Bogor</i></span>
                 </div>
             </section>
-        </article>
-        <!-- DESTINASI -->
-        <article>
-            <section>
-                <!-- title section -->
-                <h2 class="title">DESTINASI WISATA POPULER</h2>
-                <hr>
-                <div class="destination-box d1">
-                    <div class="destination">
-                        <img src="monas.jpg" alt="">
-                    </div>
-                    <div class="destination">
-                        <img src="bali.jpg" alt="">
-
-                    </div>
-                    <div class="destination">
-                        <img src="banda-neira.jpg" alt="">
-                    </div>
-                </div>
-
-                <div class="destination-box d2">
-                    <div class="destination">
-                        <img src="toba-lake.jpg" alt="">
-                    </div>
-                    <div class="destination">
-                        <img src="raja-ampat.jpg" alt="">
-
-                    </div>
-                    <div class="destination">
-                        <img src="borobudur.jpg" alt="">
-                    </div>
-                </div>
-                </div>
-            </section>
-        </article>
+        </aside>
+        <!-- end aside -->
     </main>
+    <!-- end main -->
+    <!-- start footer -->
+    <footer>
+        <p> &copy; Copyright A'Travel - 2023. All rights reserved.</p>
+    </footer>
+    <!-- end footer -->
+    <!-- script js -->
+    <script src="script/script.js"></script>
 </body>
-<script src="navbar.js"></script>
-
 
 </html>
