@@ -31,7 +31,7 @@
                 <li><a href="">Beranda</a></li>
                 <!-- submenu links -->
                 <li class="submenu-links">
-                    <a href="#destination" onclick="show_hide()">Destinasi</a>
+                    <a onclick="show_hide()">Destinasi</a>
                     <i class="fa fa-caret-down"></i>
                     <!-- dropdown menu -->
                     <ul class="dropdown">
@@ -125,29 +125,41 @@
                 </section>
             </article>
         </div>
-        <!-- start aside -->
-        <aside id="contact">
-            <section class="cta">
-                <h2>Pesan Perjalanan</h2>
-                <button class="btn">Hubungi Kami</button>
+
+        <div id="cta">
+            <section id="title-cta">
+                <h2>Hubungi Kami</h2>
+                <p id="description">
+                    Jika anda memiliki pertanyaan lebih lanjut, atau ingin berkonsultasi tentang perjalanan liburan
+                    anda.
+                    <br><br>
+                    Silahkan isi formulir untuk menghubungi salah satu tim konsultasi kami!
+                </p>
             </section>
-            <section class="cta">
-                <div class="box-profile">
-                    <img src="img/profile.jpg" alt="myPhoto">
-                    <span class="profile" id="name">Alfiansyah Cahyo W</span>
-                    <span class="profile" id="status"><i>Jr. Web Developer</i></span>
-                    <span class="profile" id="email"><i>alfinxd4@gmail.com</i></span>
-                    <span class="profile" id="email"><i>(+62)858-1972-7856</i></span>
-                    <span class="profile" id="email"><i>Tajur Halang, Bogor</i></span>
-                </div>
+            <form action="">
+                <div id="warning"></div>
+                <input id="name" type="text" name="name" placeholder="Nama Lengkap">
+                <input id="email" type="email" name="email" placeholder="Alamat Email">
+                <input id="city" type="text" name="city" placeholder="Alamat (Nama Kota)">
+                <input id="zip-code" type="number" name="zip-code" placeholder="Kode Pos">
+                <input id="status" type="checkbox" name="status">
+                <label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah
+                    benar
+                    dan telah
+                    sesuai</label>
+                <button id="submit-form" type="submit">Submit</button>
+            </form>
+            <section>
+
             </section>
-        </aside>
-        <!-- end aside -->
+        </div>
+
+
     </main>
     <!-- end main -->
     <!-- start footer -->
     <footer>
-        <p> &copy; Copyright A'Travel - 2023. All rights reserved.</p>
+        <p> &copy; Copyright A'Travel x <a id="link" href="https://skilvul.com">Skilvul</a></p>
     </footer>
     <!-- end footer -->
     <!-- script js -->
